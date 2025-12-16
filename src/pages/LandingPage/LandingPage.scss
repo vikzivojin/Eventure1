@@ -1,0 +1,60 @@
+@use "../../styles/variables" as *;
+@use "../../styles/functions" as *;
+@use "../../styles/mixins" as *;
+
+.landing-page {
+}
+.content-cards {
+  max-width: $max-width-lg;
+  margin: 0 auto pxToRem(32) auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: pxToRem(32);
+  &__link {
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    @include tablet {
+      width: calc(50% - pxToRem(32));
+    }
+    @include desktop {
+      width: calc(33.333% - pxToRem(32));
+    }
+  }
+}
+
+.manage-events-section {
+  text-align: center;
+  padding: pxToRem(42);
+
+  @include tablet {
+    padding: pxToRem(42) pxToRem(108);
+  }
+
+  &__title {
+    color: $color-indigo;
+    margin: 0 0 pxToRem(72) 0;
+  }
+}
+
+.eventcard-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: pxToRem(24);
+  &__item {
+    padding: pxToRem(24);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: pxToRem(24);
+    border-radius: 8px;
+    border: 1px solid $color-gray-light;
+    background-color: $color-white;
+    width: 100%;
+  }
+}

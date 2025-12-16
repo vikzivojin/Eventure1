@@ -1,0 +1,66 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+@use "../../styles/functions" as *;
+
+.signup-form {
+  &__description {
+    color: $color-gray-dark;
+    margin: 0 0 pxToRem(16) 0;
+  }
+  &__confirm-group {
+    border-bottom: 1px solid grey;
+    margin-bottom: pxToRem(16);
+  }
+  &__h3 {
+    margin-bottom: pxToRem(16);
+    font-size: pxToRem(16);
+  }
+  &__h4 {
+    margin-bottom: pxToRem(16);
+    font-size: pxToRem(16);
+  }
+  &__p {
+    margin-bottom: pxToRem(16);
+  }
+}
+
+.event-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  &__item {
+    margin: 0 0 pxToRem(16) 0;
+    label {
+      display: flex;
+      align-items: flex-start;
+    }
+  }
+  &__title {
+    color: $color-charcoal;
+  }
+  &__date {
+    color: $color-gray-dark;
+  }
+  &__time {
+    color: $color-gray-dark;
+  }
+}
+
+.confirm-group {
+  &__event-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  &__event-title {
+    font-weight: bold;
+    display: block;
+  }
+  &__event-date {
+    color: $color-gray-dark;
+    display: block;
+  }
+  &__event-time {
+    display: block;
+  }
+}

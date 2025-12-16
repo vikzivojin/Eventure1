@@ -1,0 +1,43 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+@use "../../styles/functions" as *;
+
+.attendee {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-grow: 1;
+
+  &__first-name {
+    margin-right: pxToRem(16);
+    @include tablet {
+      margin-right: 0;
+      width: 20%;
+    }
+  }
+  &__last-name {
+    margin-right: pxToRem(16);
+    @include tablet {
+      margin-right: 0;
+      width: 20%;
+    }
+  }
+  &__email {
+    width: 100%;
+    @include tablet {
+      width: 38%;
+    }
+  }
+
+  &__checkbox {
+    // width: 15%;
+  }
+
+  &__avatar {
+    margin-left: pxToRem(16);
+    @include tablet {
+      margin-left: auto;
+    }
+  }
+}

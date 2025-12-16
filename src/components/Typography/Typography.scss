@@ -1,0 +1,45 @@
+@use "../../styles/variables" as *;
+@use "../../styles/functions" as *;
+@use "../../styles/mixins" as *;
+
+.typography {
+  margin: 0;
+
+  &--h1 {
+    font-size: pxToRem(40);
+    font-weight: bold;
+    margin-bottom: pxToRem(8);
+  }
+
+  &--h2 {
+    font-size: pxToRem(28);
+    font-weight: semi-bold;
+    margin-bottom: pxToRem(8);
+  }
+
+  &--h3 {
+    font-size: pxToRem(24);
+    font-weight: semi-bold;
+    margin-bottom: pxToRem(8);
+  }
+
+  &--h4 {
+    font-size: pxToRem(23);
+    margin-bottom: pxToRem(8);
+  }
+
+  &--h5 {
+    font-size: pxToRem(20);
+    margin-bottom: pxToRem(8);
+  }
+
+  &--h6 {
+    font-size: pxToRem(16);
+    margin-bottom: pxToRem(8);
+  }
+
+  &--p {
+    font-size: pxToRem(16);
+    line-height: 1.6;
+  }
+}

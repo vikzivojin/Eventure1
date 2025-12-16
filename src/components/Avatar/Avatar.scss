@@ -1,0 +1,37 @@
+@use "../../styles/variables" as *;
+@use "../../styles/functions" as *;
+
+.avatar {
+  position: relative;
+  padding: pxToRem(8);
+  width: pxToRem(36);
+  height: pxToRem(36);
+  background-color: $color-indigo-lighter;
+  color: $color-white;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  vertical-align: top;
+  overflow: hidden;
+
+  &__initials {
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.4;
+    font-size: pxToRem(16);
+    margin: 0;
+  }
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    &--default {
+      position: static;
+    }
+  }
+}

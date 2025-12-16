@@ -1,0 +1,24 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+@use "../../styles/functions" as *;
+
+.attendees-wrapper {
+  max-width: $max-width-md;
+  margin: pxToRem(93) auto 0 auto;
+  padding: 0 pxToRem(16);
+}
+
+.attendees-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin: pxToRem(32) auto pxToRem(118) auto;
+  &__item {
+    padding: pxToRem(16) pxToRem(24);
+    border: 1px solid $color-gray-light;
+    border-bottom: unset;
+    &:last-child {
+      border-bottom: 1px solid $color-gray-light;
+    }
+  }
+}

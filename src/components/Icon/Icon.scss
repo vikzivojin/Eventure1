@@ -1,0 +1,31 @@
+@use "../../styles/variables" as *;
+@use "../../styles/functions" as *;
+
+.icon {
+  $self: &;
+  border-radius: $border-radius-md;
+  border: 1px solid $color-indigo;
+  background: $color-indigo;
+  display: inline-flex;
+  width: pxToRem(51);
+  height: pxToRem(51);
+  padding: pxToRem(15) pxToRem(14);
+  justify-content: center;
+  align-items: center;
+  gap: pxToRem(10);
+  flex-shrink: 0;
+  vertical-align: top;
+
+  &__svg {
+  }
+
+  &--inverse {
+    background: $color-white;
+    border-color: $color-indigo;
+    #{$self}__svg {
+      path {
+        stroke: $color-indigo;
+      }
+    }
+  }
+}

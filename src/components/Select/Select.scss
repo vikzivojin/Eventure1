@@ -1,0 +1,19 @@
+@use "../../styles/variables" as *;
+@use "../../styles/functions" as *;
+
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.select {
+  width: 100%;
+  padding: pxToRem(10);
+  border: 1px solid $color-gray-light;
+  border-radius: $border-radius-md;
+  font-size: pxToRem(16);
+  color: $color-charcoal;
+  background-color: $color-white;
+  appearance: none;
+}

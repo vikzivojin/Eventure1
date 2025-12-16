@@ -1,0 +1,41 @@
+.attendee {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-grow: 1;
+}
+.attendee__first-name {
+  margin-right: 1rem;
+}
+@media screen and (min-width: 700px) {
+  .attendee__first-name {
+    margin-right: 0;
+    width: 20%;
+  }
+}
+.attendee__last-name {
+  margin-right: 1rem;
+}
+@media screen and (min-width: 700px) {
+  .attendee__last-name {
+    margin-right: 0;
+    width: 20%;
+  }
+}
+.attendee__email {
+  width: 100%;
+}
+@media screen and (min-width: 700px) {
+  .attendee__email {
+    width: 38%;
+  }
+}
+.attendee__avatar {
+  margin-left: 1rem;
+}
+@media screen and (min-width: 700px) {
+  .attendee__avatar {
+    margin-left: auto;
+  }
+}/*# sourceMappingURL=Attendee.css.map */

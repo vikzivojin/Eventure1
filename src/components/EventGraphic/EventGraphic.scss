@@ -1,0 +1,29 @@
+@use "../../styles/variables" as *;
+@use "../../styles/functions" as *;
+
+.event-graphic {
+  background-color: $color-indigo-light;
+  display: flex;
+  width: pxToRem(160);
+  height: pxToRem(160);
+  min-width: pxToRem(160);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__day {
+    color: $color-indigo-medium;
+    text-align: center;
+    font-size: pxToRem(72);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  &__month {
+    color: $color-indigo-medium;
+    text-align: center;
+    font-size: pxToRem(24);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+}

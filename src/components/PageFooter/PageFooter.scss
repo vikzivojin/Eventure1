@@ -1,0 +1,46 @@
+@use "../../styles/variables" as *;
+@use "../../styles/functions" as *;
+@use "../../styles/mixins" as *;
+
+.page-footer {
+  border-top: 1px solid $color-gray-light;
+  width: 100%;
+  max-width: $max-width-lg;
+  margin: 0 auto;
+  line-height: 1.4;
+  font-weight: 400;
+  padding: pxToRem(16);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+
+  @include tablet {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: pxToRem(24);
+  }
+  &__item {
+    color: $color-gray-dark;
+  }
+  &__link {
+    color: $color-gray-dark;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    padding: pxToRem(8) 0;
+    &:hover {
+      border-bottom: 2px solid $color-gray-dark;
+    }
+  }
+  &__copy {
+    color: $color-gray-dark;
+  }
+}
