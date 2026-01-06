@@ -1,0 +1,34 @@
+.event-graphic {
+  background-color: #e1e6ff;
+  display: flex;
+  width: 10rem;
+  height: 10rem;
+  min-width: 10rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.event-graphic__day {
+  color: #4056ce;
+  text-align: center;
+  font-size: 4.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.event-graphic__month {
+  color: #4056ce;
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.event-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}/*# sourceMappingURL=EventList.css.map */
