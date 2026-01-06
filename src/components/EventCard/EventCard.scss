@@ -1,0 +1,72 @@
+@use "../../styles/variables" as *;
+@use "../../styles/functions" as *;
+
+.event-card {
+  background-color: $color-white;
+  display: flex;
+  width: pxToRem(1072);
+  height: pxToRem(219);
+  min-width: pxToRem(568);
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: pxToRem(20) pxToRem(20) pxToRem(20) pxToRem(20);
+
+}
+
+.event-card-description {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  padding-top: pxToRem(32);
+  
+}
+
+.event-card-date {
+  width: 20%;
+  padding: pxToRem(32) pxToRem(32) pxToRem(32) pxToRem(32);
+  font-size: medium;
+}
+
+.event-card-description-title{
+  display: flex;
+  font-size: 24px;
+  color: $color-charcoal;
+  font-style: bold;
+  width: 100%;
+  margin-left: 5%;
+  justify-content: flex-start;
+}
+
+
+.event-card-description-date{
+  display: flex;
+  font-size: 16px;
+  color: $color-charcoal;
+  font-style: semi-bold;
+  width: 100%;
+  margin-left: 5%;
+  justify-content: flex-start;
+}
+
+.event-card-description-details{
+  display: flex;
+  font-size: 20;
+  font-style: semi-bold;
+  width: 100%;
+  margin-left: 5%;
+  color: $color-gray-dark;
+  justify-content: flex-start;
+}
+
+.event-card-description-buttons{
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  padding-top: pxToRem(48);
+  margin-right: pxToRem(48);
+  gap: pxToRem(32);
+}

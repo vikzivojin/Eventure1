@@ -1,4 +1,4 @@
-import "./ComponentDocs.scss";
+import "./HomePage.scss";
 
 import Attendee from "../../components/Attendee/Attendee.jsx";
 import Avatar from "../../components/Avatar/Avatar.jsx";
@@ -24,7 +24,7 @@ import Typography from "../../components/Typography/Typography.jsx";
 import { tomorrow } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { useState } from "react";
 
-const ComponentDocs = () => {
+const HomePage = () => {
   const [selectedRadio, setSelectedRadio] = useState("radio-button-1");
   const [selectedCheckboxes, setSelectedCheckboxes] = useState([]);
   const [selectedOption, setSelectedOption] = useState("Option 1");
@@ -515,7 +515,7 @@ const steps = [
 
   return (
     <div className="component-docs">
-      <PageHeader title="Component Docs"></PageHeader>
+      <PageHeader title="Events"></PageHeader>
       <div className="component-docs__container">
         <Navigation />
         <main className="component-docs__wrapper">
@@ -1142,4 +1142,4 @@ const steps = [
     </div>
   );
 };
-export default ComponentDocs;
+export default HomePage;

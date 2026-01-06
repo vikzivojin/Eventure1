@@ -1,3 +1,5 @@
+@use "./styles/variables" as *;
+
 .app {
   display: flex;
   flex-direction: column;
@@ -6,4 +8,9 @@
   &__routes {
     flex-grow: 1;
   }
+}
+
+body{
+
+  background: linear-gradient(0deg, #3649b1 1.4%, $color-indigo 98.28%);
 }

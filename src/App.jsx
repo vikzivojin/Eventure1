@@ -1,9 +1,9 @@
 import "./App.scss";
 
-import ComponentDocs from "./pages/ComponentDocs/ComponentDocs.jsx";
+import HomePage from "./pages/HomePage/HomePage.jsx";
 
 const App = () => {
-  return <ComponentDocs />;
+  return <HomePage />;
 };
 
 export default App;

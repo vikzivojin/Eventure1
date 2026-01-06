@@ -6,4 +6,8 @@
 }
 .app__routes {
   flex-grow: 1;
+}
+
+body {
+  background: linear-gradient(0deg, #3649b1 1.4%, #566ad9 98.28%);
 }/*# sourceMappingURL=App.css.map */
