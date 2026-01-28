@@ -1,8 +1,9 @@
 .event-card {
   background-color: #fff;
   display: flex;
-  width: 67rem;
-  height: 13.6875rem;
+  width: 80%;
+  max-width: 67rem;
+  min-height: 13.6875rem;
   min-width: 35.5rem;
   flex-direction: row;
   justify-content: center;
@@ -14,14 +15,16 @@
 .event-card-description {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
+  margin-left: pxToREM(200);
   justify-content: center;
   align-items: center;
   padding-top: 2rem;
 }
 
 .event-card-date {
-  width: 20%;
+  display: flex;
+  width: 14rem;
   padding: 2rem 2rem 2rem 2rem;
   font-size: medium;
 }
@@ -62,5 +65,7 @@
   justify-content: flex-end;
   padding-top: 3rem;
   margin-right: 3rem;
+  margin-left: pxToREM(30);
+  margin-bottom: pxToREM(30);
   gap: 2rem;
 }/*# sourceMappingURL=EventCard.css.map */

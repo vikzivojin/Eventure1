@@ -2,6 +2,7 @@ import "./EventList.scss";
 import EventGraphic from "../../components/EventGraphic/EventGraphic.jsx";
 import SecondaryButton from "../../components/SecondaryButton/SecondaryButton.jsx";
 import Button from "../../components/Button/Button.jsx";
+import { useParams, useNavigate, BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 const EventList = () => {
   
@@ -33,8 +34,8 @@ const EventList = () => {
                 {events.description}
               </div>
               <div className="event-card-description-buttons">
-                <SecondaryButton>Learn More</SecondaryButton>
-                <Button>Register Now</Button>
+                <Link to={`/LandingPage/`} ><SecondaryButton>Learn More</SecondaryButton></Link>
+                <Link to={`/SignupForm/`} ><Button>Register Now</Button></Link>
               </div>
 
             </div>

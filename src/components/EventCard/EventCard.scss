@@ -4,8 +4,9 @@
 .event-card {
   background-color: $color-white;
   display: flex;
-  width: pxToRem(1072);
-  height: pxToRem(219);
+  width: 80%;
+  max-width: pxToRem(1072);
+  min-height: pxToRem(219);
   min-width: pxToRem(568);
   flex-direction: row;
   justify-content: center;
@@ -18,7 +19,8 @@
 .event-card-description {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
+  margin-left: pxToREM(200);
   justify-content: center;
   align-items: center;
   padding-top: pxToRem(32);
@@ -26,7 +28,8 @@
 }
 
 .event-card-date {
-  width: 20%;
+  display: flex;
+  width: pxToRem(224);
   padding: pxToRem(32) pxToRem(32) pxToRem(32) pxToRem(32);
   font-size: medium;
 }
@@ -68,5 +71,7 @@
   justify-content: flex-end;
   padding-top: pxToRem(48);
   margin-right: pxToRem(48);
+  margin-left: pxToREM(30);
+  margin-bottom: pxToREM(30);
   gap: pxToRem(32);
 }

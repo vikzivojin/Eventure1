@@ -26,6 +26,7 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import Typography from "../../components/Typography/Typography.jsx";
 import { tomorrow } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { useState } from "react";
+import { useParams, useNavigate, BrowserRouter, Routes, Route } from "react-router-dom";
 
 const HomePage = () => {
   
