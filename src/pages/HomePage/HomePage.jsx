@@ -28,23 +28,17 @@ import { tomorrow } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { useState } from "react";
 import { useParams, useNavigate, BrowserRouter, Routes, Route } from "react-router-dom";
 
-const HomePage = () => {
+const HomePage = ({events}) => {
   
 
-  const events = {
-    
-    title: "Code Horizon",
-    date: "2024-01-15",
-    time: "7:00 PM - 9:00 PM",
-    description: "Join us for a future-forward summit exploring the next frontiers in AI, quantum computing, and decentralized infrastructure over drinks and light bites",
-  };
+  
 
 
   return (
     <div className="component-docs">
       <PageHeader title="Events"></PageHeader>
 
-      <EventList/>
+      <EventList events={events}/>
 
       
     </div>
